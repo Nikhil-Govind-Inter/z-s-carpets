@@ -2,6 +2,11 @@
 
 # dependencies
 /node_modules
+
+
+.env
+/CLAUDE.md
+/AGENTS.md
 /.pnp
 .pnp.*
 .yarn/*
@@ -12,7 +17,6 @@
 
 # testing
 /coverage
-
 # next.js
 /.next/
 /out/

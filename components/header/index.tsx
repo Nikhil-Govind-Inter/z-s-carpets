@@ -107,7 +107,7 @@ export default function Header() {
               </li>
             </ul>
 
-            <Button className="text-white flex gap-2 w-[144px] text-[12px] xl:text-[14px h-[30px]">
+            <Button className="text-white flex gap-2 w-[144px] text-[12px] xl:text-[14px] h-[30px]">
               <span className="">Categories</span>
               <Menu />
             </Button>
@@ -164,3 +164,5 @@ export default function Header() {
     </section>
   );
 }
+
+

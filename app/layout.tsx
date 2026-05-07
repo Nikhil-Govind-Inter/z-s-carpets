@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Manrope } from "next/font/google";
+import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "../components/header";
 import Footer from "@/components/footer";
 
-export const runtime = 'edge';
 
 const manrope = Manrope({
   subsets: ["latin"],
@@ -28,9 +27,11 @@ export default function RootLayout({
       lang="en"
       className={`${manrope.variable} h-full antialiased bg-gray-600`}
     >
-      <Header />
-      <body className="min-h-full flex flex-col">{children}</body>
-      <Footer />
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
